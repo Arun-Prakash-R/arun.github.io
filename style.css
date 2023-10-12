@@ -1444,7 +1444,7 @@ footer a i{
     }
 
     .navlist{
-        display: flex;
+        display: none;
         position: absolute;
         top: 100%;
         right: 0;
@@ -1456,15 +1456,7 @@ footer a i{
         transition: all .45s ease;
     }
 
-    .navlist a{
-        display: block;
-        padding-bottom: 1rem;
-        font-size: 1rem;
-    }
-
-    .navlist.open{
-        top: 100%;
-    }
+   
 
     .home{
         grid-template-columns: 1fr;
@@ -1512,6 +1504,7 @@ footer a i{
 
     footer p{
         font-size: .6rem;
+
     }
 
     .filter-buttons .button{
@@ -1537,6 +1530,24 @@ footer a i{
     .contact-box{
         flex-direction: column-reverse;
     }
+
+    .navlist li a{
+        display: none;
+    }
+
+    .navlist{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: rgba(0,0,0,.5);
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+  
     
 }
 
